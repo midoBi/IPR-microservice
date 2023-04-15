@@ -1,0 +1,35 @@
+version: '3'
+services:
+  ### $ mongo
+  mongodb:
+    image: mongo:5.0.7
+    ports:
+      - 27017:27017
+    healthcheck:
+      test: "mongo --eval 'db.stats().ok'"
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+    restart: on-failure
+  ## End - mongodb database definition
+  ### $ postgres
+  db:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    ports:
+      - '5432:5432'
+    volumes:
+      - db:/var/lib/postgresql/data
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+  ## End - postgres database definition
+volumes:
+  db:
+    driver: local

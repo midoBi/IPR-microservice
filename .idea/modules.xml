@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IPR-microservice.iml" filepath="$PROJECT_DIR$/IPR-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ipr-services/inventory-service/inventory-service.iml" filepath="$PROJECT_DIR$/ipr-services/inventory-service/inventory-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ipr-services/product service/product service.iml" filepath="$PROJECT_DIR$/ipr-services/product service/product service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ipr-services/review-service/review-service.iml" filepath="$PROJECT_DIR$/ipr-services/review-service/review-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ipr-services/user-service/user-service.iml" filepath="$PROJECT_DIR$/ipr-services/user-service/user-service.iml" />
+    </modules>
+  </component>
+</project>

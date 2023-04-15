@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/productdb
+    username: user
+    password: password
+    initialize: false
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
